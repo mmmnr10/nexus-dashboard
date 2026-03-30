@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Bell, Settings, LogOut, ChevronDown } from "lucide-react";
+import { Search, Bell, Settings, LogOut, ChevronDown, Github } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function TopBar() {
@@ -26,6 +26,16 @@ export default function TopBar() {
           <Bell className="w-5 h-5" />
           <span className="absolute top-2 right-2 w-2 h-2 bg-accent rounded-full border-2 border-[#020617]" />
         </button>
+
+        <a 
+          href="https://github.com/mmmnr10/nexus-dashboard" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-all"
+          title="View Source on GitHub"
+        >
+          <Github className="w-5 h-5" />
+        </a>
 
         <button className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-all">
           <Settings className="w-5 h-5" />
