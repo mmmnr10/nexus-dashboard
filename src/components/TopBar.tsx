@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Bell, Settings, LogOut, ChevronDown, Github } from "lucide-react";
+import { Search, Bell, Settings, LogOut, ChevronDown, Code } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function TopBar() {
@@ -34,7 +34,7 @@ export default function TopBar() {
           className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-all"
           title="View Source on GitHub"
         >
-          <Github className="w-5 h-5" />
+          <Code className="w-5 h-5" />
         </a>
 
         <button className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/5 transition-all">
