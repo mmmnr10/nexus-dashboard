@@ -15,9 +15,7 @@ const menuItems = [
   { icon: Settings, label: "Settings", active: false },
 ];
 
-export default function Sidebar() {
-  const [activeTab, setActiveTab] = useState("Dashboard");
-
+export default function Sidebar({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: (tab: string) => void }) {
   return (
     <aside className="fixed left-0 top-0 h-full w-20 lg:w-64 glass border-r border-white/10 flex flex-col z-50 transition-all duration-300">
       <div className="p-6 flex items-center gap-3">
